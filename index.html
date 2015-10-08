@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html style="height: 389px;">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Ben Umali Portfolio</title>
+
+    <!--Mobile Support Enabled -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css"> 
+    
+    <!--Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+    <!--Material Design-->
+    <link href="css/roboto.min.css" rel="stylesheet">
+    <link href="css/material-fullpalette.min.css" rel="stylesheet">
+    <link href="css/ripples.min.css" rel="stylesheet">
+
+    <!--Dropdown.js -->
+    <link href="//cdn.rawgit.com/FezVrasta/dropdown.js/master/jquery.dropdown.css" rel="stylesheet">
+
+    <!--jQuery-->
+    <script src="js/jQuery.js"></script>
+
+</head>
+
+<body>
+
+        <div class="container main">
+
+                <div class="header-panel shadow-z-2">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-xs-3">
+                        <h1>Ben Umali</h1>
+                        <p class="lead">Welcome to my Portfolio</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          
+                        <!--<img src="img/Ben.jpg" class="img-responsive img-circle" id="imgBio" alt="Sexy">-->
+                <div class="container-fluid">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="well infobox">
+                            <p>Hello world! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis aliquet arcu, nec porta quam dapibus et. Mauris aliquet arcu sed sapien faucibus malesuada. Mauris mi leo, congue sit amet neque vestibulum, ornare lobortis est. Sed congue viverra dolor, id tempus libero iaculis ullamcorper. Aliquam erat volutpat. Aenean eget risus placerat tortor posuere euismod. Quisque non est vel enim condimentum interdum. Curabitur mauris nisi, lobortis sit amet placerat in, imperdiet volutpat purus.</p>
+                            <div class="text-center">
+                            <button class="btn btn-material-blue" type="submit">Email me</button>
+                            <button class="btn btn-material-purple" type="submit">Follow me</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="row">
+                <nav class="col-xs-3 menu">
+                  <ul>
+                    <li class="active withripple" data-target="#about">Material Design for Bootstrap</li>
+                    <li class="withripple" data-target="#getting-started">Getting Started</li>
+                    <li><a href="http://fezvrasta.github.com/bootstrap-material-design/bootstrap-elements.html" target="_blank">Bootstrap elements <i class="mdi-action-open-in-new"></i></a></li>
+                    <li class="withripple" data-target="#material-colors">Material Colors</li>
+                    <li class="withripple" data-target="#checkbox">Checkbox</li>
+                    <li class="withripple" data-target="#radio-button">Radio Button</li>
+                    <li class="withripple" data-target="#toggle-button">Toggle Button</li>
+                    <li class="withripple" data-target="#input">Input</li>
+                    <li class="withripple" data-target="#navbar">Navbar</li>
+                    <li class="withripple" data-target="#progress-bar">Progress Bar</li>
+                    <li class="withripple" data-target="#slider">Slider</li>
+                    <li class="withripple">Tabs (To do)</li>
+                    <li class="withripple" data-target="#button">Button</li>
+                    <li class="withripple">Icon button (To do)</li>
+                    <li class="withripple" data-target="#floating-action-button">Floating Action Button</li>
+                    <li class="withripple" data-target="#dropdown">Dropdown (Work in progress)</li>
+                    <li class="withripple" data-target="#dropdown-menu">Dropdown Menu</li>
+                    <li class="withripple" data-target="#dialog">Dialog</li>
+                    <li class="withripple" data-target="#shadow">Shadow</li>
+                  </ul>
+                </nav>
+
+                <div class="pages col-xs-9">
+                      <div class="col-xs-10">
+                        <div class="well page active" id="about">
+                          <h1 class="header">Material Design for Bootstrap</h1>
+                          <p>Material Design for Bootstrap is a theme for Bootstrap 3 which lets you use the new <a href="http://www.google.com/design/spec/material-design/" target="_blank">Google Material Design</a> in your favorite front-end framework.</p>
+                          <p>If you like this project you can support me by donating something on Gratipay, starring this repository, or <a href="https://github.com/FezVrasta/bootstrap-material-design/issues">reporting bugs and ideas</a>.</p>
+                          <p>Read more about Material Design for Bootstrap at the <a href="https://github.com/FezVrasta/bootstrap-material-design">Github page</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+
+            <!--Card Example
+            <div class="card">
+                <div class="card-height-indicator"></div>
+                <div class="card-content">
+                <div>
+                   <h3>Lorem Ipsum Dolor</h3>
+                </div>
+                <div class="card-body">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <footer class="card-footer">
+                    <button class="btn btn-flat">Share</button>
+                    <button class="btn btn-flat btn-warning">Learn More</button>
+                </footer>
+                </div>
+            </div>
+             -->
+
+
+
+        </div>
+
+<footer>
+</footer>
+
+
+<script>
+      window.page = window.location.hash || "#about";
+
+      $(document).ready(function() {
+        if (window.page != "#about") {
+          $(".menu").find("li[data-target=" + window.page + "]").trigger("click");
+        }
+      });
+
+      $(window).on("resize", function() {
+        $("html, body").height($(window).height());
+        $(".main, .menu").height($(window).height() - $(".header-panel").outerHeight());
+        $(".pages").height($(window).height());
+      }).trigger("resize");
+
+      $(".menu li").click(function() {
+        // Menu
+        if (!$(this).data("target")) return;
+        if ($(this).is(".active")) return;
+        $(".menu li").not($(this)).removeClass("active");
+        $(".page").not(page).removeClass("active").hide();
+        window.page = $(this).data("target");
+        var page = $(window.page);
+        window.location.hash = window.page;
+        $(this).addClass("active");
+
+
+        page.show();
+
+        var totop = setInterval(function() {
+          $(".pages").animate({scrollTop:0}, 0);
+        }, 1);
+
+        setTimeout(function() {
+          page.addClass("active");
+          setTimeout(function() {
+            clearInterval(totop);
+          }, 1000);
+        }, 100);
+      });
+
+      function cleanSource(html) {
+        var lines = html.split(/\n/);
+
+        lines.shift();
+        lines.splice(-1, 1);
+
+        var indentSize = lines[0].length - lines[0].trim().length,
+            re = new RegExp(" {" + indentSize + "}");
+
+        lines = lines.map(function(line){
+          if (line.match(re)) {
+            line = line.substring(indentSize);
+          }
+
+          return line;
+        });
+
+        lines = lines.join("\n");
+
+        return lines;
+      }
+
+      $("#opensource").click(function() {
+        $.get(window.location.href, function(data){
+          var html = $(data).find(window.page).html();
+          html = cleanSource(html);
+          $("#source-modal pre").text(html);
+          $("#source-modal").modal();
+        });
+      });
+    </script>
+
+
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Material Design for Bootstrap -->
+<script src="js/material.min.js"></script>
+<script src="js/ripples.min.js"></script>
+<script>
+      $.material.init();
+</script>
+
+</body>
+
+</html>
