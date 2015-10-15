@@ -15,17 +15,17 @@
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo">Ben Umali</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">Portfolio</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact Me</a></li>
         <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact Me</a></li>
-      </ul>
+     </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">Portfolio</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact Me</a></li>
         <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact Me</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
@@ -34,13 +34,9 @@
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
-        <br><br>
-        <h1 class="header center teal-text text-lighten-2">Ben Umali</h1>
+        <h2 class="header center white-text text-lighten-2" style="margin-top:80px;">Engineer. Designer. Entrepreneur.</h2>
         <div class="row center">
-          <h5 class="header col s12 dark">Engineer. Designer. Entrepreneur.</h5>
-        </div>
-        <div class="row center">
-          <a href="#" class="waves-effect waves-light btn">Get to Know Me</a>
+          <a href="#about" class="waves-effect waves-light btn-large">Get to Know Me</a>
         </div>
         <br><br>
 
@@ -51,7 +47,7 @@
 
 
   <div class="container">
-    <div class="section">
+    <div class="section scrollspy" id="about">
 
       <!--   About Me Section   -->
       <div class="row">
@@ -92,16 +88,28 @@
                 </div>
               </div>
             </div>
-      </div>
-      </div>
-      </div>
 
-
+      </div>
+      </div>
+      </div>
+<!--
+              <div class="tabs-wrapper">
+          <div class="row">
+          <div class="col hide-on-small-only m2 l2">
+            <ul class="section table-of-contents">
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+-->
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">I'm not what I thought I'd be. But then again I might be so much more.</h5>
+          <h5 class="header col s12 light">Beautiful and Functional Design.</h5>
         </div>
       </div>
     </div>
@@ -109,7 +117,7 @@
   </div>
 
   <div class="container">
-    <div class="section">
+    <div class="section scrollspy" id="portfolio">
            <!--<h3><i class="mdi-content-send brown-text"></i></h3>-->
         <h1 class="center">Portfolio</h1>
         <div class="row">
@@ -175,10 +183,11 @@
 
 
   <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
+    <div class="section no-pad-bot scrollspy" id="contact">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">Get in Contact with Me.</h5>
+          <h5 class="header col s12 light">Reach Out.</h5>
+          <a href="#" class="waves-effect waves-light btn-large">Contact</a>
         </div>
       </div>
     </div>
@@ -214,6 +223,14 @@
   <!--  Scripts-->
   <script src="js/jQuery.js"></script>
   <script src="js/materialize.js"></script>
+ 
+  <script> 
+    $(document).ready(function(){
+    $('.scrollspy').scrollSpy();
+  });
+    </script>
+
+
   <script src="js/init.js"></script>
 
   </body>
