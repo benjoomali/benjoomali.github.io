@@ -1,111 +1,57 @@
-#imgBio {
-    width: 25%;
-    border: solid;
-    margin-left: 50px;
-    margin-bottom: 20px;
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #212121;
 }
 
-.header-panel {
-        text-align: center;
-        background-attachment: scroll;
-        background-image: url(../img/header-bg.jpg);
-        background-position: center center;
-        background-repeat: none;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover;
-        z-index: 3;
-        background-color: #4CAF50;
-      }
+p {
+  line-height: 2rem;
+}
 
-      .header-panel div {
-        position: relative;
-        height: 100%;
-      }
-      .header-panel h1 {
-        color: #FFF;
-        font-size: 20px;
-        font-weight: 400;
-        position: absolute;
-        bottom: 10px;
-        padding-left: 35px;
-      }
+.button-collapse {
+  color: #26a69a;
+}
 
-      .menu {
-        overflow: auto;
-        padding: 0;
-      }
-      .menu, .menu * {
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-      .menu ul {
-        padding: 0;
-        margin: 7px 0;
-      }
-      .menu ul li {
-        list-style: none;
-        padding: 20px 0 20px 50px;
-        font-size: 15px;
-        font-weight: normal;
-        cursor: pointer;
-      }
-      .menu ul li.active {
-        background-color: #dedede;
-        position: relative;
-      }
-      .menu ul li a {
-        color: rgb(51, 51, 51);
-        text-decoration: none;
-      }
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
 
-      .pages {
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 4;
-        padding: 0;
-        overflow: auto;
-      }
-      .pages > div {
-        padding: 0 5px;
-        padding-top: 64px;
-      }
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
 
-      .pages .header {
-        color: rgb(82, 101, 162);
-        font-size: 24px;
-        font-weight: normal;
-        margin-top: 5px;
-        margin-bottom: 60px;
-        letter-spacing: 1.20000004768372px;
-      }
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
 
-      .page {
-        transform: translateY(1080px);
-        transition: transform 0 linear;
-        display: none;
-        opacity: 0;
-        font-size: 16px;
-      }
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
 
-      .page.active {
-        transform: translateY(0px);
-        transition: all 0.3s ease-out;
-        display: block;
-        opacity: 1;
-      }
-
-      #opensource {
-        color: rgba(0, 0, 0, 0.62);
-        position: fixed;
-        margin-top: 50px;
-        margin-left: 50px;
-        z-index: 100;
-      }
-
-      #source-modal h4 {
-        color: black;
-      }
+footer.page-footer {
+  margin: 0;
+}

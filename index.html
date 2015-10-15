@@ -1,187 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Ben Umali - Portfolio</title>
 
-    <head>
-        <title> Ben Umali - Portfolio </title>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">Ben Umali</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact Me</a></li>
+      </ul>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact Me</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
 
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/simple-sidebar.css" rel="stylesheet">
-      
-        <!-- Include roboto.css to use the Roboto web font, material.css to include the theme and ripples.css to style the ripple effect -->
-        <link href="css/roboto.min.css" rel="stylesheet">
-        <link href="css/material.min.css" rel="stylesheet">
-        <link href="css/ripples.min.css" rel="stylesheet">
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">Ben Umali</h1>
+        <div class="row center">
+          <h5 class="header col s12 dark">Engineer. Designer. Entrepreneur.</h5>
+        </div>
+        <div class="row center">
+          <a href="#" class="waves-effect waves-light btn">Get to Know Me</a>
+        </div>
+        <br><br>
 
-        <style>
-        .header-panel {
-            background-color: #2196F3;
-            height: 144px;
-            position: relative;
-            z-index: 3;
-          }
+      </div>
+    </div>
+    <div class="parallax"><img src="img/background1.jpg" alt="Unsplashed background img 1"></div>
+  </div>
 
-        .header-panel div {
-            position: relative;
-            height: 100%;
-          }
 
-        .header-panel h1 {
-            color: #FFF;
-            font-size: 20px;
-            font-weight: 400;
-            position: absolute;
-            bottom: 10px;
-            padding-left: 35px;
-          }
+  <div class="container">
+    <div class="section">
 
-        .profile-pic img {
-            height: 190px;
-            width: 150px;
-        }
-        </style>
+      <!--   About Me Section   -->
+      <div class="center">
+      <div class="row">
+          <div class="col s12 m7">
+            <h1> About Me </h1>
 
-    </head>
+            <p>Quisque id erat eget libero iaculis placerat. Sed mi tortor, suscipit at elementum sit amet, ullamcorper quis lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ligula ipsum, hendrerit quis sapien ac, pretium sagittis sapien. Ut mattis, eros a interdum sagittis, lacus mauris semper nunc, et dictum tortor turpis a elit. Curabitur blandit, mi sit amet rutrum fringilla, sapien magna gravida metus, vel rhoncus neque lorem et arcu. Curabitur tincidunt leo nec sapien feugiat mattis. Suspendisse potenti. Curabitur in tincidunt elit. Quisque nec mattis felis. Nam at cursus dui, sit amet venenatis risus. Aenean eget lectus et justo tempor tincidunt.</p>
 
-    <body>
-        <div id="wrapper">
-                <!-- Sidebar -->
-                <div id="sidebar-wrapper" class="shadow-z-1">
-                    <ul class="sidebar-nav">
-                        <li class="sidebar-brand">                         
-                            <a href="#">
-                                <h2>Ben Umali</h2>
-                            </a>
-                        </li>
-                        <hr>
-                        <li>
-                            <a href="#">About Me</a>
-                        </li>
-                        <li>
-                            <a href="#">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#">Blog</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact</a>
-                        </li>
-                        <hr>
-                        <li>
-                            <a href="https://github.com/benjoomali">Github</a>
-                        </li>
-                    </ul>
+            <p>Proin vehicula lacus augue, eu iaculis mauris efficitur in. Ut tempus finibus magna et accumsan. Integer sit amet velit vehicula, venenatis libero sed, accumsan nisl. Vestibulum eu dignissim elit. Suspendisse potenti. Cras vel elementum augue. Aliquam vel erat eu tortor feugiat semper quis sed nibh. Duis molestie dignissim consectetur. Quisque lorem nisi, congue sit amet scelerisque ac, hendrerit at nisl.</p>
+          </div>
+
+            <div class="col s12 m5">
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/Ben2.jpg">
+                  <span class="card-title">Sexy Motherfucker.</span>
                 </div>
-                <!-- /#sidebar-wrapper -->
-
-                <!-- Page -->
-               
-                <div id="page-content-wrapper">
-                    <div class="header-panel shadow-z-2">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-xs-4">
-                                    <a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><i class="mdi-navigation-menu"></i></a>
-                                   <h1>Ben Umali - Portfolio</h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                <!-- About Me -->
-                <div class="container">
-                                        <h1> About Me </h1>
-                                        <p class="lead">Engineer. Designer. Entrepreneur.</p>
-
-                                        <div class="profile-pic"><img src="img/ben.jpg" alt="sexy"></div>
-                                            <p>Quisque id erat eget libero iaculis placerat. Sed mi tortor, suscipit at elementum sit amet, ullamcorper quis lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ligula ipsum, hendrerit quis sapien ac, pretium sagittis sapien. Ut mattis, eros a interdum sagittis, lacus mauris semper nunc, et dictum tortor turpis a elit. Curabitur blandit, mi sit amet rutrum fringilla, sapien magna gravida metus, vel rhoncus neque lorem et arcu. Curabitur tincidunt leo nec sapien feugiat mattis. Suspendisse potenti. Curabitur in tincidunt elit. Quisque nec mattis felis. Nam at cursus dui, sit amet venenatis risus. Aenean eget lectus et justo tempor tincidunt.</p>
-
-                                            <p>Proin vehicula lacus augue, eu iaculis mauris efficitur in. Ut tempus finibus magna et accumsan. Integer sit amet velit vehicula, venenatis libero sed, accumsan nisl. Vestibulum eu dignissim elit. Suspendisse potenti. Cras vel elementum augue. Aliquam vel erat eu tortor feugiat semper quis sed nibh. Duis molestie dignissim consectetur. Quisque lorem nisi, congue sit amet scelerisque ac, hendrerit at nisl.</p>
-
-                                            <p>Quisque id erat eget libero iaculis placerat. Sed mi tortor, suscipit at elementum sit amet, ullamcorper quis lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ligula ipsum, hendrerit quis sapien ac, pretium sagittis sapien. Ut mattis, eros a interdum sagittis, lacus mauris semper nunc, et dictum tortor turpis a elit. Curabitur blandit, mi sit amet rutrum fringilla, sapien magna gravida metus, vel rhoncus neque lorem et arcu. Curabitur tincidunt leo nec sapien feugiat mattis. Suspendisse potenti. Curabitur in tincidunt elit. Quisque nec mattis felis. Nam at cursus dui, sit amet venenatis risus. Aenean eget lectus et justo tempor tincidunt.</p>
-
-                                            <hr>
-                                            <button class="btn btn-flat">Share</button>
-                                            <button class="btn btn-flat btn-warning">Learn More</button>
-                                            <p> Wut.</p>
-    
-                    </div>
-
-                <!--Portfolio-->
-                <div class="container">
-                    <h1> Portfolio </h1>
-                                        <p class="lead">Personal and Professional</p>
-                                            <p>Quisque id erat eget libero iaculis placerat. Sed mi tortor, suscipit at elementum sit amet, ullamcorper quis lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ligula ipsum, hendrerit quis sapien ac, pretium sagittis sapien. Ut mattis, eros a interdum sagittis, lacus mauris semper nunc, et dictum tortor turpis a elit. Curabitur blandit, mi sit amet rutrum fringilla, sapien magna gravida metus, vel rhoncus neque lorem et arcu. Curabitur tincidunt leo nec sapien feugiat mattis. Suspendisse potenti. Curabitur in tincidunt elit. Quisque nec mattis felis. Nam at cursus dui, sit amet venenatis risus. Aenean eget lectus et justo tempor tincidunt.</p>
-
-                                            <p>Proin vehicula lacus augue, eu iaculis mauris efficitur in. Ut tempus finibus magna et accumsan. Integer sit amet velit vehicula, venenatis libero sed, accumsan nisl. Vestibulum eu dignissim elit. Suspendisse potenti. Cras vel elementum augue. Aliquam vel erat eu tortor feugiat semper quis sed nibh. Duis molestie dignissim consectetur. Quisque lorem nisi, congue sit amet scelerisque ac, hendrerit at nisl.</p>
-
-                                            <p>Quisque id erat eget libero iaculis placerat. Sed mi tortor, suscipit at elementum sit amet, ullamcorper quis lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ligula ipsum, hendrerit quis sapien ac, pretium sagittis sapien. Ut mattis, eros a interdum sagittis, lacus mauris semper nunc, et dictum tortor turpis a elit. Curabitur blandit, mi sit amet rutrum fringilla, sapien magna gravida metus, vel rhoncus neque lorem et arcu. Curabitur tincidunt leo nec sapien feugiat mattis. Suspendisse potenti. Curabitur in tincidunt elit. Quisque nec mattis felis. Nam at cursus dui, sit amet venenatis risus. Aenean eget lectus et justo tempor tincidunt.</p>
+                <div class="card-content">
+                  <p>Something something something something something.</p>
                 </div>
-                      
+                <div class="card-action">
+                  <a href="#">This is a link</a>
+                </div>
+              </div>
+            </div>
+      </div>
+      </div>
+      </div>
 
-                    <div id="footer">
-                            <hr>
-                            <ul>
-                                <li>&copy; Ben Umali 2015. All rights reserved.</li><li>Design: <a href="#">InspiraTech</a></li>
-                            </ul>
-                    </div>           
-                </div> <!-- /#page-content-wrapper -->
-
-
-
-</div>
-        
+    </div>
+  </div>
 
 
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">I'm not what I thought I'd be. But then again I might be so much more.</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="img/background2.jpg" alt="Unsplashed background img 2"></div>
+  </div>
 
-        <!-- Your site ends -->
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <!--<h3><i class="mdi-content-send brown-text"></i></h3>-->
+          <h1>Portfolio</h1>
+          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
 
 
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">Ayy Lmao.</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="img/background3.jpg" alt="Unsplashed background img 3"></div>
+  </div>
 
-        <script src="js/jQuery.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l8 m8 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4"><strong>InspiraTech</strong> is quisque id erat eget libero iaculis placerat. Sed mi tortor, suscipit at elementum sit amet, ullamcorper quis lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ligula ipsum, hendrerit quis sapien ac, pretium sagittis sapien.</p>
+        </div>
 
-        <script>
-            $("#menu-toggle").click(function(e) {
-                e.preventDefault();
-                $("#wrapper").toggleClass("toggled");
-            });
-        </script>
+        <div class="col l4 m4 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Github</a></li>
+            <li><a class="white-text" href="#!">Facebook</a></li>
+            <li><a class="white-text" href="#!">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        &copy; Ben Umali 2015. All rights reserved.
+      </div>
+    </div>
+  </footer>
 
 
-        <script>
-                    /**
-                     * Created by Kupletsky Sergey on 08.09.14.
-                     *
-                     * Add JQuery animation to bootstrap dropdown elements.
-                     */
+  <!--  Scripts-->
+  <script src="js/jQuery.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
 
-                    (function($) {
-                        var dropdown = $('.dropdown');
-
-                        // Add slidedown animation to dropdown
-                        dropdown.on('show.bs.dropdown', function(e){
-                            $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
-                        });
-
-                        // Add slideup animation to dropdown
-                        dropdown.on('hide.bs.dropdown', function(e){
-                            $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
-                        });
-                    })(jQuery);
-        </script>
-
-        
-        <script src="js/ripples.min.js"></script>
-        <script src="js/material.min.js"></script>
-        <script>
-            $(document).ready(function() {
-                // This command is used to initialize some elements and make them work properly
-                $.material.init();
-            });
-        </script>
-
-    </body>
-
+  </body>
 </html>
