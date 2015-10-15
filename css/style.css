@@ -6,11 +6,19 @@
 }
 
 .header-panel {
-        background-color: #4CAF50;
-        height: 144px;
-        position: relative;
+        text-align: center;
+        background-attachment: scroll;
+        background-image: url(../img/header-bg.jpg);
+        background-position: center center;
+        background-repeat: none;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
         z-index: 3;
+        background-color: #4CAF50;
       }
+
       .header-panel div {
         position: relative;
         height: 100%;
