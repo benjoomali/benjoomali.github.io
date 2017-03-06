@@ -1,0 +1,20 @@
+/* Basic page stuff */
+
+.navbar {
+	background: #FFF;
+	text-align: center;
+}
+
+h2 {
+	font-size: 32dp;
+	text-align: center;
+}
+
+.navigation li {
+  		display: inline-block;
+			margin: 0 0.5em;
+		}
+		.navigation li a {
+			display: block;
+			padding: 1em 0.5em;
+		}
