@@ -3,21 +3,58 @@
 <head>
     <title>Kalesa Grill</title>
     <meta charset="utf-8"/>
+    <meta name="author" content="standTALL Development"
+    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+    <link rel="stylesheet" href="css/normalize.css" media="screen">
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="css/panels.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/panels.css" type="text/css" rel="stylesheet"/>
 </head>
-<body style="">
+<body>
+<!--
+  <header>
+  <a id="site-logo" href="#"><img src="img/logo.jpeg" height="70" width="230"></a>
 
-   <ul class="navigation navbar" role="navigation">
-      <li><a href="#">Our Story</a></li>
+  <nav>
+
+  <a href="#" id="img/menu-icon.png"></a>
+    <ul>
+      <li><a href="#" class="current">Our Story</a></li>
       <li><a href="#">See Our Menu</a></li>
-      <li><img src="img/logo.jpeg" height="60" width="200"></li>
       <li><a href="#">Order Catering Online</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#">Contact Us</a></li>
     </ul>
+  </nav>
+  </header> -->
 
+  <section class="navigation">
+  <div class="nav-container">
+    <div class="brand">
+      <a href="#!"><img src="img/logo.jpeg" height="70" width="230"></a>
+    </div>
+    <nav>
+      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+      <ul class="nav-list">
+        <li>
+          <a href="#!">Our Story</a>
+        </li>
+        <li>
+          <a href="#!">See Our Menu</a>
+        </li>
+        <li>
+          <a href="#!"><b>Order Catering</b></a>
+        </li>
+        <li>
+          <a href="#!">Contact</a>
+        </li>
+          <li>
+          <a href="http://hopialikeit.com">Hopia Like It</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
 
-
+<main>
 <div class="overflow">
   <section class="panels">
     <article class="panels__side panels__side--left">
@@ -64,9 +101,11 @@
     </article>
   </section>
 </div>
-
+</main>
 
 <script src="js/jQuery.js"></script>
+<script src="js/navbar.js"></script>
 <script src="js/panel.js"></script>
+
 </body>
 </html>
