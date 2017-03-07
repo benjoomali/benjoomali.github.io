@@ -35,10 +35,10 @@
       <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
       <ul class="nav-list">
         <li>
-          <a href="#!">Our Story</a>
+          <a href="#!" id="storyButton">Our Story</a>
         </li>
         <li>
-          <a href="#!">See Our Menu</a>
+          <a href="#!" id="menuButton">See Our Menu</a>
         </li>
         <li>
           <a href="#!"><b>Order Catering</b></a>
@@ -54,7 +54,59 @@
   </div>
 </section>
 
+<div id="storyModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h1>Our Story</h1>
+    <p>Hopia Like it is established in 1999 by Gerry, Anette, Susan, John &amp; James who are all family. They are known to be the purveyor of pastry goods. They believe in quality, not quantity, &amp; only use the freshest imported ingredients. Every pastry chef has been cooking since they were kids as part of family tradition &amp; is led by John who took culinary arts in Le Cordon Bleu in Pasadena by a master chef.</p>
+
+    <p>This Filipino inspired bakery will take you on a journey like no other &amp; give you an unforgettable experience that makes you want to enjoy it again &amp; again. It is the flavors &amp; magic of the hopia, bread &amp; pastries that makes it so enjoyable.</p>
+  </div>
+
+</div>
+
+<div id="menuModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span2 class="close2">&times;</span2>
+    <h1>Browse Our Menu!</h1>
+    <p>Item</p>
+    <p>Item</p>
+    <p>Item</p>
+    <p>Item</p>
+    <p>Item</p>
+    <p>Item</p>
+    <p>Item</p>
+    <p>Item</p>
+    <p>Item</p>
+    <p>Item</p>
+    <p>Item</p>
+    <p>Item</p>
+    <p>Item</p>
+    <p>Item</p>
+    <p>Item</p>
+    <p>Item</p>
+    <p>Item</p>
+    <p>Item</p>
+    <p>Item</p>
+    <p>Item</p>
+    <p>Item</p>
+    <p>Item</p>
+    <p>Item</p>
+    <p>Item</p><p>Item</p>
+  </div>
+
+</div>
+
 <main>
+<!-- embed a video in to the background, not high quality enough
+     <video loop muted autoplay poster="img/store2.jpg" class="bgVideo">
+      <source src="files/video.mp4" type="video/mp4">
+      </video> -->
+
 <div class="overflow">
   <section class="panels">
     <article class="panels__side panels__side--left">
@@ -83,7 +135,7 @@
       <div>
         <h1 class="panels__headline">Oxnard, CA</h1>
         <h2>2091 Statham Blvd</h2>
-        </div>
+      </div>
         <svg class="arrow arrow--right" width="40" height="40" viewBox="0 0 24 24"><path d="M0 0h24v24h-24z" fill="none"/><path d="M12 4l-1.41 1.41 5.58 5.59h-12.17v2h12.17l-5.58 5.59 1.41 1.41 8-8z"/></svg>
       </div>
       <div class="panels__side panels__side--inner-right">
@@ -106,6 +158,46 @@
 <script src="js/jQuery.js"></script>
 <script src="js/navbar.js"></script>
 <script src="js/panel.js"></script>
+
+<script>
+// Get the modal
+var modal = document.getElementById('storyModal');
+var modal2 = document.getElementById('menuModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("storyButton");
+var btn2 = document.getElementById("menuButton");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+var span2 = document.getElementsByClassName("close2")[0];
+
+// When the user clicks on the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+btn2.onclick = function() {
+    modal2.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+span2.onclick = function() {
+    modal2.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal || event.target == modal2) {
+        modal.style.display = "none";
+        modal2.style.display = "none";
+    }
+}
+</script>
 
 </body>
 </html>
