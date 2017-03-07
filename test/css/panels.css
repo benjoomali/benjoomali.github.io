@@ -101,7 +101,6 @@ body {
   transform-origin: left center;
   transform: rotateY(90deg);
   transition-delay: 0.1s;
-  background: url("//unsplash.it/1250/900") center/cover;
 }
 .panels__side--inner-right:before {
   content: "";
