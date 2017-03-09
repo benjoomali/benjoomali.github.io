@@ -7,29 +7,14 @@
     <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
     <link rel="stylesheet" href="css/normalize.css" media="screen">
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="css/panels.css" type="text/css" rel="stylesheet"/>
 </head>
 <body>
-<!--
-  <header>
-  <a id="site-logo" href="#"><img src="img/logo.jpeg" height="70" width="230"></a>
 
-  <nav>
-
-  <a href="#" id="img/menu-icon.png"></a>
-    <ul>
-      <li><a href="#" class="current">Our Story</a></li>
-      <li><a href="#">See Our Menu</a></li>
-      <li><a href="#">Order Catering Online</a></li>
-      <li><a href="#">Contact Us</a></li>
-    </ul>
-  </nav>
-  </header> -->
-
+  <!--Start Navigation Bar -->
   <section class="navigation">
   <div class="nav-container">
     <div class="brand">
-      <a href="#!"><img src="img/logo.jpeg" height="70" width="230"></a>
+      <a href="#!"><img src="img/logo.png" height="45" width="220"></a>
     </div>
     <nav>
       <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
@@ -45,6 +30,11 @@
         </li>
         <li>
           <a href="#!">Contact</a>
+          <ul class="nav-dropdown">
+              <li><a href="#!">Facebook</a></li>
+              <li><a href="#!">Twitter</a></li>
+              <li><a href="#!">Instagram</a></li>
+          </ul>
         </li>
           <li>
           <a href="http://hopialikeit.com">Hopia Like It</a>
@@ -100,64 +90,35 @@
   </div>
 
 </div>
-
-<main>
-<!-- embed a video in to the background, not high quality enough
-     <video loop muted autoplay poster="img/store2.jpg" class="bgVideo">
-      <source src="files/video.mp4" type="video/mp4">
-      </video> -->
-
-<div class="overflow">
-  <section class="panels">
-    <article class="panels__side panels__side--left">
-      <div class="panels__side panels__side--inner-left">
-        <div>
-        <p>Hours of Operation:</p>
-        <p>Mon 10:00 am - 8:00 pm</p>
-        <p>Tue 10:00 am - 8:00 pm </p>
-        <p>Wed 10:00 am - 8:00 pm</p>  
-        <p>Thu 10:00 am - 8:00 pm</p>  
-        <p>Fri 10:00 am - 8:00 pm</p>  
-        <p>Sat 8:00 am - 8:00 pm</p> 
-        <p>Sun 8:00 am - 6:00 pm </p>
-        </div>
-      </div>
-      <div class="panels__side panels__side--inner">
-        <div>
-        <h1 class="panels__headline">Winnetka, CA</h1>
-        <h2>20171 Saticoy St</h2> 
-        </div>     
-        <svg class="arrow arrow--left" width="40" height="40" viewBox="0 0 24 24"><path d="M0 0h24v24h-24z" fill="none"/><path d="M20 11h-12.17l5.59-5.59-1.42-1.41-8 8 8 8 1.41-1.41-5.58-5.59h12.17v-2z"/></svg>
-      </div>
-    </article>
-    <article class="panels__side panels__side--right">
-      <div class="panels__side panels__side--inner">
-      <div>
-        <h1 class="panels__headline">Oxnard, CA</h1>
-        <h2>2091 Statham Blvd</h2>
-      </div>
-        <svg class="arrow arrow--right" width="40" height="40" viewBox="0 0 24 24"><path d="M0 0h24v24h-24z" fill="none"/><path d="M12 4l-1.41 1.41 5.58 5.59h-12.17v2h12.17l-5.58 5.59 1.41 1.41 8-8z"/></svg>
-      </div>
-      <div class="panels__side panels__side--inner-right">
-        <div>
-        <p>Hours of Operation:</p>
-        <p>Mon 10:00 am - 8:00 pm</p>
-        <p>Tue 10:00 am - 8:00 pm </p>
-        <p>Wed 10:00 am - 8:00 pm</p>  
-        <p>Thu 10:00 am - 8:00 pm</p>  
-        <p>Fri 10:00 am - 8:00 pm</p>  
-        <p>Sat 8:00 am - 8:00 pm</p> 
-        <p>Sun 8:00 am - 6:00 pm </p>
-        </div>
-      </div>
-    </article>
-  </section>
+<article>
+<div class="fullscreenbg">
+     <video loop muted autoplay poster="img/store2.jpg">
+      <source src="video/videocut.mp4" type="video/mp4">
+      </video>
 </div>
-</main>
+
+<div class="overlay">
+    <h1>Location Hours:</h1>
+        <p>Mon 10:00 am - 8:00 pm</p>
+        <p>Tue 10:00 am - 8:00 pm </p>
+        <p>Wed 10:00 am - 8:00 pm</p>  
+        <p>Thu 10:00 am - 8:00 pm</p>  
+        <p>Fri 10:00 am - 8:00 pm</p>  
+        <p>Sat 8:00 am - 8:00 pm</p> 
+        <p>Sun 8:00 am - 6:00 pm </p>
+</div>
+
+</article>
+
+<div class="footer">
+  <p>Locations:</p>
+  <p>20171 Saticoy St, Winnetka, CA 91306</p>
+  <p>2091 Statham Blvd., Oxnard, CA 93033</p>
+</div>
+
 
 <script src="js/jQuery.js"></script>
 <script src="js/navbar.js"></script>
-<script src="js/panel.js"></script>
 
 <script>
 // Get the modal
