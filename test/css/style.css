@@ -1,11 +1,5 @@
 /* Basic page stuff */
 
-
-h2 {
-	font-size: 32dp;
-	text-align: center;
-}
-
 a { text-decoration: none }
 
 /* The Modal (background) */
@@ -71,20 +65,15 @@ main {
 
 /* Header styles */
 
-.site-logo {
-    margin: 20px;
-    font-size: 3rem;
-    float: left;
-}
-
 .navigation {
   height: 70px;
-  background: #FFF;
+  background: transparent;
 }
 
 .brand {
   position: absolute;
   padding-left: 10px;
+  padding-top: 10px;
   float: left;
   line-height: 70px;
   text-transform: uppercase;
@@ -118,15 +107,15 @@ nav ul li a:visited {
   display: block;
   padding: 0 18px;
   line-height: 70px;
-  background: #FFF;
-  color: #000;
+  background: rgba(0,0,0,.3);
+  color: #FFF;
   text-decoration: none;
   font-size: 20px;
 }
 nav ul li a:hover,
 nav ul li a:visited:hover {
   background: #3CC47C;
-  color: #000;
+  color: #FFF;
 }
 nav ul li a:not(:only-child):after,
 nav ul li a:visited:not(:only-child):after {
@@ -154,7 +143,7 @@ nav ul li ul li a {
   position: absolute;
   top: 0;
   right: 0;
-  background: #FFF;
+  background: transparent;
   height: 70px;
   width: 70px;
 }
@@ -228,4 +217,76 @@ nav ul li ul li a {
 }
 #nav-toggle.active span:after {
   transform: rotate(-45deg);
+}
+
+article {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.fullscreenbg {
+	position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+}
+
+.overlay {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  background: rgba(0,0,0,0.3);
+  display: block;
+  position: absolute;
+  top: 10%;
+  left: 30%;
+}
+
+.overlay h1 {
+  text-align: center;
+  padding-top: 100px;
+  color: #fff;
+  font-family: inherit;
+}
+
+.overlay p{
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  color: #fff;
+  font-family: inherit;
+  margin-bottom: 20px;
+}
+
+.overlay a {
+  color: #fff;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #1E392A;
+  text-align: center;
 }
