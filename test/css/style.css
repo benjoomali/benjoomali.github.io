@@ -107,7 +107,7 @@ nav ul li a:visited {
   display: block;
   padding: 0 18px;
   line-height: 70px;
-  background: rgba(0,0,0,.3);
+  background: rgba(0,0,0,.15);
   color: #FFF;
   text-decoration: none;
   font-size: 20px;
@@ -254,11 +254,11 @@ video {
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
-  background: rgba(0,0,0,0.3);
+  background: rgba(0,0,0,0.15);
   display: block;
   position: absolute;
   top: 10%;
-  left: 30%;
+  left: 20%;
 }
 
 .overlay h1 {
@@ -281,6 +281,10 @@ video {
   color: #fff;
 }
 
+.tiny {
+  font-size: 12px;
+}
+
 .footer {
   position: absolute;
   right: 0;
@@ -288,5 +292,12 @@ video {
   left: 0;
   padding: 1rem;
   background-color: #1E392A;
+  color: #e0e0e0;
   text-align: center;
+}
+
+.top-footer {
+  width: 100%;
+  background-color: #121314;
+  color: #FFF;
 }
