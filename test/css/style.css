@@ -174,11 +174,37 @@ nav ul li ul li a {
   .nav-dropdown {
     position: static;
   }
+
+  .fullscreenbg {
+  position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.overlay {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  background: rgba(0,0,0,0.15);
+  display: block;
+  position: absolute;
+  top: 10%;
+}
+
+
 }
 @media screen and (min-width: 640px) {
   .nav-list {
     display: block !important;
   }
+
+
 }
 #nav-toggle {
   position: absolute;
@@ -249,8 +275,8 @@ video {
 }
 
 .overlay {
-  width: 500px;
-  height: 500px;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -258,12 +284,11 @@ video {
   display: block;
   position: absolute;
   top: 10%;
-  left: 20%;
 }
 
 .overlay h1 {
   text-align: center;
-  padding-top: 100px;
+  padding-top: 60px;
   color: #fff;
   font-family: inherit;
 }
@@ -274,7 +299,7 @@ video {
   margin: 0 auto;
   color: #fff;
   font-family: inherit;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .overlay a {
