@@ -58,8 +58,9 @@ code {
   color: #FFF;
 }
 
+
 .navbar-brand {
-  padding: 0 20px;
+  padding: 0 10px;
   margin-right: 10px;
 }
 
@@ -87,12 +88,23 @@ code {
   color: #FFF;
   margin-top: 10px;
   margin-left: 6px;
+  margin-right:6px;
   padding: 4px 12px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .navbar-static-top {
   margin-bottom: 10px;
 }
 
-
+@media (min-width: 768px) {
+  .container > .navbar-header,
+  .container-fluid > .navbar-header,
+  .container > .navbar-collapse,
+  .container-fluid > .navbar-collapse {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+}
 
