@@ -1,0 +1,98 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #1E392A;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+  padding: 60px 15px 0;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+#bgVideo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(../img/store2.jpg) no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+  margin-top: 20px;
+  color: #FFF;
+}
+
+.navbar-brand {
+  padding: 0 20px;
+  margin-right: 30px;
+}
+
+.navbar-default .navbar-nav>li>a {
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-size: 16px;
+  color: #FFF;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: #3CC47C;
+    color: #121314;
+}
+
+.navbar-default {
+  background: transparent;
+  border-color: transparent;
+  color: #FFF;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.25);
+  color: #FFF;
+  margin-top: 10px;
+  margin-left: 6px;
+  padding: 4px 12px;
+}
+
+.navbar-static-top {
+  margin-bottom: 10px;
+}
+
+
+

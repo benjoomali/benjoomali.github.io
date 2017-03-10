@@ -188,9 +188,6 @@ nav ul li ul li a {
 .overlay {
   width: 200px;
   height: 200px;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
   background: rgba(0,0,0,0.15);
   display: block;
   position: absolute;
@@ -245,7 +242,7 @@ nav ul li ul li a {
   transform: rotate(-45deg);
 }
 
-article {
+main {
   max-width: 1000px;
   margin: 0 auto;
   padding: 10px;
@@ -275,11 +272,8 @@ video {
 }
 
 .overlay {
-  width: 350px;
-  height: 350px;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
+  width: 300px;
+  height: 280px;
   background: rgba(0,0,0,0.15);
   display: block;
   position: absolute;
@@ -288,7 +282,7 @@ video {
 
 .overlay h1 {
   text-align: center;
-  padding-top: 60px;
+  padding-top: 20px;
   color: #fff;
   font-family: inherit;
 }
