@@ -25,14 +25,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><img src="img/logo.png" height="50" width="240"></a>
+          <a class="navbar-brand" href="#!"><img src="img/logo.png" height="50" width="240"></a>
         </div>
 
 
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#!">Our Story</a></li>
-            <li><a href="#!">Menu</a></li>
+            <li><a href="our-story.html">Our Story</a></li>
+            <li><a href="menu.html">Menu</a></li>
             <li><a href="#!"><b>Order Catering</b></a></li>
             <li><a href="#!">Contact</a></li>
             <li><a href="http://hopialikeit.com" target="_BLANK">HopiaLikeIt</a></li>
@@ -44,7 +44,7 @@
     </section>
 
     
-    <video loop muted autoplay poster="img/store2.jpg" id="bgVideo">
+    <video muted autoplay loop poster="img/store2.jpg" id="bgVideo">
       <source src="video/videocut.mp4" type="video/mp4">
     </video>
 
@@ -52,34 +52,70 @@
 
 <!-- Begin page content -->
     <div class="container">
-    <div class="row">
-        <div class="col-md-4 overlay">
-          <h1>RESTAURANT HOURS:</h1>
-          <p>Monday 10:00 am - 8:00 pm</p>
-          <p>Tuesday 10:00 am - 8:00 pm </p>
-          <p>Wednesday 10:00 am - 8:00 pm</p>  
-          <p>Thursday 10:00 am - 8:00 pm</p>  
-          <p>Friday 10:00 am - 8:00 pm</p>  
-          <p>Saturday 8:00 am - 8:00 pm</p> 
-          <p>Sunday 8:00 am - 6:00 pm </p>
+
+        <!--
+        <div class="col-md-6 overlay">
+          <h1>Our Story</h1>
+          <p class="storyfont">Kalesa Grill was established in 1999 by Gerry, Anette, Susan, John &amp; James who are all family. They are known to be the purveyor of pastry goods. They believe in quality, not quantity, &amp; only use the freshest imported ingredients. Every pastry chef has been cooking since they were kids as part of family tradition &amp; is led by John who took culinary arts in Le Cordon Bleu in Pasadena by a master chef.</p>
+
+          <p class="storyfont">This Filipino inspired bakery will take you on a journey like no other &amp; give you an unforgettable experience that makes you want to enjoy it again &amp; again. It is the flavors &amp; magic of the hopia, bread &amp; pastries that makes it so enjoyable.</p> 
+
+          <button class="btn">See Our Menu</button>
+        </div>-->
+
+        <div class="col-md-10 col-center-block overlay">
+          <div class="page-header">
+          <h1> The Finest Filipino Foods in LA</h1>
+          </div>
+
+          <div class="row">
+
+          <div class="col-sm-6">
+            <br>
+            <p class="lead"><span class="glyphicon glyphicon-time"></span>&nbsp; Our Restaurant Hours:</p>
+            <p>Monday-Friday 10:00 am - 8:00 pm</p>
+            <p>Saturday 8:00 am - 8:00 pm</p> 
+            <p>Sunday 8:00 am - 6:00 pm </p>
+          </div>
+
+          <div class="col-sm-6">
+          <br>
+            <p class="lead"><span class="glyphicon glyphicon-map-marker"></span>&nbsp; Restaurant Locations:</p>
+            <p>20171 Saticoy St, Winnetka, CA 91306</p>
+            <p>2091 Statham Blvd., Oxnard, CA 93033</p>
+          </div>
         </div>
 
-        <div class="col-md-6 overlay">
-          <h1>Follow Us on Facebook!</h1>
-          <p>Insert Content </p>
+        <div>
+          <h2>Hungry?</h2>
+          <button type="button" class="btn btn-success btn-lg">See our Menu!</button>
         </div>
-    </div>
+
+
+        </div>
     </div>
 
     <footer class="footer">
       <div class="container">
-        <p class="text-muted">Kalesa Grill &copy; 2017 • 20171 Saticoy St, Winnetka, CA 91306 • 2091 Statham Blvd., Oxnard, CA 93033</p>
+        <p class="text-muted">Kalesa Grill &copy; 2017 </p>
       </div>
     </footer>
 
 
 <script src="js/jQuery.js"></script>
 <script src="js/bootstrap.js"></script>
+<script>
+var today = new Date(),
+    open = "We're open now!",
+    closed = "We're closed. See you tomorrow?",
+    display = document.getElementById('display');
+
+if (today.getHours() >= 9 && today.getHours() < 18) {
+    display.innerHTML = open;
+} else {
+    display.innerHTML = closed;
+}
+</script>
 
 </body>
 </html>
