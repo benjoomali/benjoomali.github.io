@@ -1,0 +1,91 @@
+body {
+  background: #415a6c;
+  margin: 0;
+  font-family: 'Oswald';
+}
+.parallax-container {
+  position: fixed;
+  overflow: visible;
+  width: 100%;
+  height: 2000px;
+  background: #D4E0EE;
+  z-index: 0;
+}
+.parallax-layer {
+  width: 100%;
+  height: 1038px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-position: bottom center;
+  background-repeat: repeat-x;
+  background-size: 3500px 1038px;
+}
+.layer-0 {
+  top: 0px;
+  z-index: 0;
+  background-image: url('../img/img0.png');
+}
+.layer-1 {
+  top: 0px;
+  z-index: 5;
+  background-image: url('../img/img1.png');
+}
+.layer-2 {
+  top: 0px;
+  z-index: 10;
+  background-image: url('../img/img2.png');
+}
+.layer-3 {
+  top: 0px;
+  z-index: 12;
+  background-image: url('../img/img3.png');
+}
+.layer-4 {
+  top: 0px;
+  z-index: 15;
+  background-image: url('../img/img4.png');
+}
+.layer-5 {
+  top: 0px;
+  z-index: 20;
+  background-image: url('../img/img5.png');
+}
+.layer-6 {
+  top: 0px;
+  z-index: 20;
+  background-image: url('../img/img6.png');
+}
+.layer-7 {
+  top: 0px;
+  z-index: 20;
+  background-image: url('../img/img7.png');
+}
+.layer-8 {
+  top: 0px;
+  z-index: 25;
+  background-image: url('../img/img8.png');
+  background-size: 3500px 1038px;
+}
+ 
+  
+.content {
+  position: absolute;
+  top: 1038px;
+  background: #050611;
+  width: 100%;
+  min-height: 1500px;
+  z-index: 1000;
+}
+.content h1 {
+  color: #fff;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.content p {
+  color: #fff;
+  font-size: 1.5em;
+  text-align: center;
+}
