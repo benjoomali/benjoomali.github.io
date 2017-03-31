@@ -2,120 +2,103 @@
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width; initial-scale=1">
 
-    <title>Kalesa Grill</title>
+    <title>standTall Parallax Test</title>
     <meta name="author" content="standTALL Development">
-    <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
-    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     
 </head>
 <body>
 
-      <!-- Fixed navbar -->
-    <section id="menu">
-    <div class="container">  
-    <nav class="navbar navbar-default navbar-static-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#!"><img src="img/logo.png" height="50" width="240"></a>
-        </div>
-
-
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="our-story.html">Our Story</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="#!"><b>Order Catering</b></a></li>
-            <li><a href="#!">Contact</a></li>
-            <li><a href="http://hopialikeit.com" target="_BLANK">HopiaLikeIt</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-    </div>
-    </section>
-
-    
-    <video muted autoplay loop poster="img/store2.jpg" id="bgVideo">
-      <source src="video/videocut5.mp4" type="video/mp4">
-    </video>
+<div class="parallax-container">
+    <div class="parallax-layer layer-0" data-parallax-speed="0.05" data-max-scroll="1038"></div>
+    <div class="parallax-layer layer-1" data-parallax-speed="0.1" data-max-scroll="1038"></div>
+    <div class="parallax-layer layer-2" data-parallax-speed="0.2" data-max-scroll="1038"></div>
+    <div class="parallax-layer layer-3" data-parallax-speed="0.3" data-max-scroll="1038"></div>
+    <div class="parallax-layer layer-4" data-parallax-speed="0.5" data-max-scroll="1038"></div>
+    <div class="parallax-layer layer-5" data-parallax-speed="0.7" data-max-scroll="1038"></div>
+    <div class="parallax-layer layer-6" data-parallax-speed="0.8" data-max-scroll="1038"></div>
+    <div class="parallax-layer layer-7" data-parallax-speed="0.7" data-max-scroll="1038"></div>
+    <div class="parallax-layer layer-8" data-parallax-speed="1" data-max-scroll="1038"></div>
+  </div>
+ 
+  <div class="content">
+  <h1>HELLO WORLD!</h1>
+  <p>Testing 1...2...3...</p>
+  </div>
 
 
 
-<!-- Begin page content -->
-    <div class="container">
 
-        <!--
-        <div class="col-md-6 overlay">
-          <h1>Our Story</h1>
-          <p class="storyfont">Kalesa Grill was established in 1999 by Gerry, Anette, Susan, John &amp; James who are all family. They are known to be the purveyor of pastry goods. They believe in quality, not quantity, &amp; only use the freshest imported ingredients. Every pastry chef has been cooking since they were kids as part of family tradition &amp; is led by John who took culinary arts in Le Cordon Bleu in Pasadena by a master chef.</p>
-
-          <p class="storyfont">This Filipino inspired bakery will take you on a journey like no other &amp; give you an unforgettable experience that makes you want to enjoy it again &amp; again. It is the flavors &amp; magic of the hopia, bread &amp; pastries that makes it so enjoyable.</p> 
-
-          <button class="btn">See Our Menu</button>
-        </div>-->
-
-        <div class="col-md-10 col-center-block overlay">
-          <div class="page-header">
-          <h1> The Finest Filipino Foods in LA</h1>
-          </div>
-
-          <div class="row">
-
-          <div class="col-sm-6">
-            <br>
-            <p class="lead"><span class="glyphicon glyphicon-time"></span>&nbsp; Our Restaurant Hours:</p>
-            <p>Monday-Friday 10:00 am - 8:00 pm</p>
-            <p>Saturday 8:00 am - 8:00 pm</p> 
-            <p>Sunday 8:00 am - 6:00 pm </p>
-          </div>
-
-          <div class="col-sm-6">
-          <br>
-            <p class="lead"><span class="glyphicon glyphicon-map-marker"></span>&nbsp; Restaurant Locations:</p>
-            <p>20171 Saticoy St, Winnetka, CA 91306</p>
-            <p>2091 Statham Blvd., Oxnard, CA 93033</p>
-          </div>
-        </div>
-
-        <div>
-          <h2>Hungry?</h2>
-          <button type="button" class="btn btn-success btn-lg">See our Menu!</button>
-        </div>
-
-
-        </div>
-    </div>
-
-    <footer class="footer">
-      <div class="container">
-        <p class="text-muted">Kalesa Grill &copy; 2017 </p>
-      </div>
-    </footer>
-
-
-<script src="js/jQuery.js"></script>
-<script src="js/bootstrap.js"></script>
-<script>
-var today = new Date(),
-    open = "We're open now!",
-    closed = "We're closed. See you tomorrow?",
-    display = document.getElementById('display');
-
-if (today.getHours() >= 9 && today.getHours() < 18) {
-    display.innerHTML = open;
-} else {
-    display.innerHTML = closed;
-}
+<script language="javascript">
+var ParallaxManager, ParallaxPart;
+ 
+ParallaxPart = (function() {
+  function ParallaxPart(el) {
+    this.el = el;
+    this.speed = parseFloat(this.el.getAttribute('data-parallax-speed'));
+    this.maxScroll = parseInt(this.el.getAttribute('data-max-scroll'));
+  }
+ 
+  ParallaxPart.prototype.update = function(scrollY) {
+    if (scrollY > this.maxScroll) { return; }
+    var offset = -(scrollY * this.speed);
+    this.setYTransform(offset);
+  };
+ 
+  ParallaxPart.prototype.setYTransform = function(val) {
+    this.el.style.webkitTransform = "translate3d(0, " + val + "px, 0)";
+    this.el.style.MozTransform    = "translate3d(0, " + val + "px, 0)";
+    this.el.style.OTransform      = "translate3d(0, " + val + "px, 0)";
+    this.el.style.transform       = "translate3d(0, " + val + "px, 0)";
+    this.el.style.msTransform     = "translateY(" + val + "px)";
+  };
+ 
+  return ParallaxPart;
+ 
+})();
+ 
+ParallaxManager = (function() {
+  ParallaxManager.prototype.parts = [];
+ 
+  function ParallaxManager(elements) {
+    if (typeof elements === 'array' && elements.length) {
+      this.elements = elements;
+    }
+    if (typeof elements === 'object' && elements.item) {
+      this.elements = Array.prototype.slice.call(elements);
+    } else if (typeof elements === 'string') {
+      this.elements = document.querySelectorAll(elements);
+      if (this.elements.length === 0) {
+        throw new Error("Parallax: No elements found");
+      }
+      this.elements = Array.prototype.slice.call(this.elements);
+    } else {
+      throw new Error("Parallax: Element variable is not a querySelector string, Array, or NodeList");
+    }
+    for (var i in this.elements) {
+      this.parts.push(new ParallaxPart(this.elements[i]));
+    }
+    window.addEventListener("scroll", this.onScroll.bind(this));
+  }
+ 
+  ParallaxManager.prototype.onScroll = function() {
+    window.requestAnimationFrame(this.scrollHandler.bind(this));
+  };
+ 
+  ParallaxManager.prototype.scrollHandler = function() {
+    var scrollY = Math.max(window.pageYOffset, 0);
+    for (var i in this.parts) { this.parts[i].update(scrollY); }
+  };
+ 
+  return ParallaxManager;
+ 
+})();
+ 
+new ParallaxManager('.parallax-layer');
 </script>
 
 </body>
+
 </html>
