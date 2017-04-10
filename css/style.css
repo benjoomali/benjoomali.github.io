@@ -214,7 +214,7 @@ content: none;
 .image03 { background-image: url('../img/headachetracker.jpg'); }
 .image04 { background-image: url('../img/inspireplanner.jpg'); }
 .image05 { background-image: url('../img/djrich.jpg'); }
-.image06 { background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-06.jpg'); }
+.image06 { background-image: url('../img/milu.png'); }
 
 
 @media screen and (max-width: 640px) {
