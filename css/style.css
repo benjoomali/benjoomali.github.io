@@ -1,57 +1,357 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
-
-nav ul a,
-nav .brand-logo {
-  color: #212121;
+body {
+  height: 100%;
+  background-color: #050611;
+  margin: 0;
+  font-family: 'Oswald', monospace;
 }
 
-p {
-  line-height: 2rem;
+html { padding: 0; margin: 0; }
+
+.left {
+  float: left;
 }
 
-.button-collapse {
-  color: #26a69a;
+.right {
+  float: right;
 }
+
+/* NAVBAR */
+
+.navigation {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 45px;
+  text-align: center;
+  padding-top: 0px;
+  padding-right: 75px;
+  z-index: 35;
+  /* SHADOW */
+  -webkit-box-shadow: 0px 0px 2px 0px   #000000;
+  -moz-box-shadow: 0px 0px 2px 0px       #000000;
+  box-shadow: 0px 0px 2px 0px #000000;
+  /* TRANSPARENCY */
+  background-color: rgba(1, 1, 1,       0.4);
+  color: rgba(1, 1, 1, 0.7);
+}
+
+.navigation a {
+  font-size: 16px;
+  padding-top: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.navigation ul
+{
+    margin-top: 12px;
+}
+
+.navigation ul li
+{
+    list-style-type: none;
+    display: inline;
+}
+
+.navigation li:before {
+  content: " | ";
+  color: #fff;
+}
+
+.navigation li:first-child:before {
+content: none;
+}
+
+.navigation li a:hover {
+  color: #ff9600;
+  font-weight: 400;
+}
+
+.logo {
+  color: #ffffff;
+  padding-top: 8px;
+  padding-left: 75px;
+  font-size: 25px;
+  line-height: 18px;
+}
+
+.logo a {
+  color: #ffffff;
+  padding-left: 75px;
+  font-size: 25px;
+  line-height: 18px;
+}
+
+.sublogo {
+  color: #ff9600;
+  padding-left: 75px;
+  font-size: 11px;
+  font-weight: 100;
+  text-align: left;
+  letter-spacing: 5px;
+}
+
+
+
+/***Parallax CSS**/
 
 .parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
+  position: fixed;
+  overflow: visible;
+  width: 100%;
+  height: 2000px;
+  background: #D4E0EE;
+  z-index: 0;
 }
-  .parallax-container .section {
-    width: 100%;
-  }
+.parallax-layer {
+  width: 100%;
+  height: 1038px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-position: bottom center;
+  background-repeat: repeat-x;
+  background-size: 3500px 1038px;
+}
+.layer-0 {
+  top: 0px;
+  z-index: 0;
+  background-image: url('../img/darkimg0.png');
+}
+.layer-1 {
+  top: 0px;
+  z-index: 5;
+  background-image: url('../img/darkimg1.png');
+}
+.layer-2 {
+  top: 0px;
+  z-index: 10;
+  background-image: url('../img/darkimg2.png');
+}
+.layer-3 {
+  top: 0px;
+  z-index: 12;
+  background-image: url('../img/darkimg3.png');
+}
+.layer-4 {
+  top: 0px;
+  z-index: 15;
+  background-image: url('../img/darkimg4.png');
+}
+.layer-5 {
+  top: 0px;
+  z-index: 20;
+  background-image: url('../img/darkimg5.png');
+}
+.layer-6 {
+  top: 0px;
+  z-index: 20;
+  background-image: url('../img/darkimg6.png');
+}
+.layer-7 {
+  top: 0px;
+  z-index: 20;
+  background-image: url('../img/darkimg7.png');
+}
+.layer-8 {
+  top: 0px;
+  z-index: 25;
+  background-image: url('../img/darkimg8.png');
+  background-size: 3500px 1038px;
+}
+ 
+  
+.content {
+  position: absolute;
+  top: 1000px;
+  background: #050611;
+  width: 100%;
+  min-height: 1500px;
+  z-index: 30;
+}
+.content h1 {
+  color: #D8DAF3;
+  font-size: 2em;
+  text-align: center;
+}
 
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
+.content p {
+  color: #D8DAF3;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.bio {
+  position: center;
+  width: 70%;
+  text-align: center;
+  bottom: 20px;
+
+}
+
+/**************/
+
+.image-grid div {
+  width: 50%;
+  height: 480px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image01 { background-image: url('../img/kalesagrill.jpg'); }
+.image02 { background-image: url('../img/ulbg.jpg'); }
+.image03 { background-image: url('../img/headachetracker.jpg'); }
+.image04 { background-image: url('../img/inspireplanner.jpg'); }
+.image05 { background-image: url('../img/djrich.jpg'); }
+.image06 { background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/food-drink-06.jpg'); }
+
+
+@media screen and (max-width: 640px) {
+  .image-grid {
+    flex-direction: column;
+    flex-wrap: no-wrap;
   }
-  #index-banner .section {
-    top: 10%;
+  .image-grid div { width: 100%; }
+}
+
+
+.image-grid .logo {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease;
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  padding: 0px 10px; }
+  .image-grid .logo img {
+    width: 300px;
+    height: auto;
+    margin: auto;
+    align-self: center; }
+    @media screen and (max-width: 768px) {
+      .feature .logo img {
+        width: 150px; } }
+
+.img-responsive {
+  width: 100%;
+  /*fix for Firefox*/ }
+
+  .workType {
+  position: absolute;
+  padding: 0px 10px;
+  color: rgba(255, 255, 255, 0);
+  transition: .3s ease;
+  text-align: center; }
+
+  .logo.pseudolink:hover .workType {
+  color: white; }
+
+/***/
+
+/*  SECTIONS  */
+.section {
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+  display: block;
+  float:left;
+  margin: 1% 0 1% 0%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF TWO  */
+.span_2_of_2 {
+  width: 100%;
+}
+.span_1_of_2 {
+  width: 50%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+  .col { 
+    margin: 1% 0 1% 0%;
   }
 }
 
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
+@media only screen and (max-width: 480px) {
+  .span_2_of_2, .span_1_of_2 { width: 100%; }
+}
+
+/***ARROW***YOU HAVE FAILED THIS CITY**/
+
+.arrow {
+  opacity: 0;
+  left: 50%;
+  position: absolute;
+  transform-origin: 50% 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.arrow-1 {
+  animation: arrow-movement 2s ease-in-out infinite;
+}
+
+.arrow-2 {
+  animation: arrow-movement 2s 1s ease-in-out infinite;
+}
+
+.arrow:before,
+.arrow:after {
+  background: #fff;
+  content: '';
+  display: block;
+  height: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+}
+
+.arrow:before {
+  transform: rotate(45deg) translateX(-23%);
+  transform-origin: top left;
+}
+
+.arrow:after {
+  transform: rotate(-45deg) translateX(23%);
+  transform-origin: top right;
+}
+
+@keyframes arrow-movement {
+  0% {
+    opacity: 0;
+    top: 45%;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-  font-size: inherit;
-}
-
-footer.page-footer {
-  margin: 0;
-}
