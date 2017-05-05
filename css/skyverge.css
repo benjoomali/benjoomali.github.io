@@ -109,13 +109,13 @@ content: none;
 
 .content h2 {
   color: #212121;
-  font-size: 1.2em;
+  font-size: 1.5em;
   text-align: center;
 }
 
 .content p {
   color: #757575;
-  font-size: 1.2em;
+  font-size: 1.5em;
   text-align: center;
 }
 
@@ -123,14 +123,6 @@ content: none;
 	color: #283593;
 	text-decoration: none;
 	font-weight: bold;
-
-}
-
-.bio {
-  position: center;
-  width: 70%;
-  text-align: center;
-  bottom: 20px;
 
 }
 
