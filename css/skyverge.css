@@ -1,0 +1,148 @@
+body {
+  height: 100%;
+  background-color: #FFF;
+  margin: 0;
+  font-family: 'Oswald', monospace;
+}
+
+html { padding: 0; margin: 0; }
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+/* Navigation */
+
+.navigation {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 45px;
+  text-align: center;
+  padding-top: 0px;
+  padding-right: 75px;
+  z-index: 35;
+  /* SHADOW */
+  -webkit-box-shadow: 0px 0px 2px 0px   #000000;
+  -moz-box-shadow: 0px 0px 2px 0px       #000000;
+  box-shadow: 0px 0px 2px 0px #000000;
+  /* TRANSPARENCY */
+  background-color: rgba(1, 1, 1,       0.6);
+  color: rgba(1, 1, 1, 0.7);
+}
+
+.navigation a {
+  font-size: 16px;
+  padding-top: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.navigation ul
+{
+    margin-top: 12px;
+}
+
+.navigation ul li
+{
+    list-style-type: none;
+    display: inline;
+}
+
+.navigation li:before {
+  content: " | ";
+  color: #fff;
+}
+
+.navigation li:first-child:before {
+content: none;
+}
+
+.navigation li a:hover {
+  color: #ff9600;
+  font-weight: 400;
+}
+
+.logo {
+  color: #ffffff;
+  padding-top: 8px;
+  padding-left: 75px;
+  font-size: 25px;
+  line-height: 18px;
+}
+
+.logo a {
+  color: #ffffff;
+  padding-left: 75px;
+  font-size: 25px;
+  line-height: 18px;
+}
+
+.sublogo {
+  color: #ff9600;
+  padding-left: 75px;
+  font-size: 11px;
+  font-weight: 100;
+  text-align: left;
+  letter-spacing: 5px;
+}
+
+/*Content*/
+
+.content {
+  position: absolute;
+  top: 100px;
+  right: 50px;
+  left: 50px;
+}
+.content h1 {
+  color: #212121;
+  font-size: 2em;
+  text-align: center;
+}
+
+.content h2 {
+  color: #212121;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.content p {
+  color: #757575;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.content a {
+	color: #283593;
+	text-decoration: none;
+	font-weight: bold;
+
+}
+
+.bio {
+  position: center;
+  width: 70%;
+  text-align: center;
+  bottom: 20px;
+
+}
+
+.img-responsive {
+	height: 250px;
+	width: 250px;
+	position: relative;
+  left: 50%;
+	overflow: hidden;
+  margin-left: -125px
+}
+
+.img-circle {
+    border-radius: 50%;
+}
